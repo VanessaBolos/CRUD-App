@@ -14,18 +14,27 @@ Responsive Layout: The app is designed to be mobile-friendly, with support for d
 Undo Deletions: If all items are deleted, users can undo this action and restore the list.
 
 ## Running it locally:
-Node.js installed on your machine (you can download it from [here]()).
+Node.js installed on your machine (you can download it from [here](https://nodejs.org/en/download/prebuilt-installer/current)).
+Expo CLI installed globally or use `npx` to run commands directly.
+To install Expo CLI globally, run: `npm install -g expo-cli`
 
-1. Install dependencies
+1. Clone the repository: `git clone https://github.com/VanessaBolos/CRUD-App.git`
+
+2. Navigate to the project directory: `cd CRUD-App`
+
+3. Install dependencies
 
    ```bash
    npm install
    ```
+   `@expo/vector-icons
+   react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context react-native-svg react-native-gesture-handler
+` 
 
-2. Start the app
+4. Start the app
 
    ```bash
-    npx expo start
+    npm start
    ```
 
 In the output, you'll find options to open the app in a
@@ -37,6 +46,14 @@ In the output, you'll find options to open the app in a
 
 ## Additional Notes:
 
-Difficulties:
+#### Difficulties:
+- Handling empty states: managing the logic for undoing deletions or displaying an empty list while keeping the UI intuitive required some fine-tuning
+- Still trying to get used to the CSS styling. I had difficulty trying to see why it didn't appear right in the emulator but looked okay in the web version. Mainly consisting spacing and alighment across the list.
+- Still trying to get used to the React Native framework.
 
-Wins:
+#### Wins:
+- Had a pretty good idea of what I wanted the app to achieve: a functional shopping list app that is user-friendly, visually appealing, and efficient.
+- Successfully implemented the features I wanted to include, including quantity editing, batch item deletion, and undoing deletion
+- Managed to get the app running on Android simulators, which was a great learning experience
+- Dynamic Editing: Introducing in-list editing of quantities without disrupting the overall flow was a major feature win.
+
